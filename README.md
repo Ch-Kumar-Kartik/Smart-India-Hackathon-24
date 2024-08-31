@@ -1,7 +1,7 @@
 # Smart-India-Hackathon-24
 POV-Our First Attempt at a Hackathon
-Ticket Booking Chatbot
-Overview
+
+
 The Ticket Booking Chatbot is a web-based application designed to assist users in booking tickets for monuments and museums. It provides information on facilities, timings, and directions, and handles ticket bookings with OTP-based mobile number authentication. The chatbot also collects Aadhar numbers during the booking process.
 
 Features
