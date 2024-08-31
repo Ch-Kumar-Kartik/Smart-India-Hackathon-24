@@ -23,31 +23,55 @@ CREATE TABLE invoice (
     ->     FOREIGN KEY (id) REFERENCES monuments(ID),
     ->     FOREIGN KEY (product_id) REFERENCES items(product_id)
     -> );
+INSERT INTO monuments (NAME, CITY)
+    -> VALUES
+    ->     ('National Gallery of Modern Art', 'New Delhi'),
+    ->     ('Salar Jung Museum', 'Hyderabad'),
+    ->     ('Victoria Memorial Hall', 'Kolkata'),
+    ->     ('Allahabad Museum', 'Prayagraj'),
+    ->     ('National Museum', 'New Delhi'),
+    ->     ('Indian Museum', 'Kolkata');
+-- Insert data into the items table with different product_ids for adult and child
+
+-- National Gallery of Modern Art (New Delhi)
+INSERT INTO items (id, ticket_type, price)
+VALUES 
+    ((SELECT ID FROM monuments WHERE NAME = 'National Gallery of Modern Art'), 'adult', 20.00),
+    ((SELECT ID FROM monuments WHERE NAME = 'National Gallery of Modern Art'), 'child', 20.00);
+
+-- Salar Jung Museum (Hyderabad)
+INSERT INTO items (id, ticket_type, price)
+VALUES 
+    ((SELECT ID FROM monuments WHERE NAME = 'Salar Jung Museum'), 'adult', 50.00),
+    ((SELECT ID FROM monuments WHERE NAME = 'Salar Jung Museum'), 'child', 20.00);
+
+-- Victoria Memorial Hall (Kolkata)
+INSERT INTO items (id, ticket_type, price)
+VALUES 
+    ((SELECT ID FROM monuments WHERE NAME = 'Victoria Memorial Hall'), 'adult', 50.00),
+    ((SELECT ID FROM monuments WHERE NAME = 'Victoria Memorial Hall'), 'child', 50.00);
+
+-- Allahabad Museum (Prayagraj)
+INSERT INTO items (id, ticket_type, price)
+VALUES 
+    ((SELECT ID FROM monuments WHERE NAME = 'Allahabad Museum'), 'adult', 50.00),
+    ((SELECT ID FROM monuments WHERE NAME = 'Allahabad Museum'), 'child', 20.00);
+
+-- National Museum (New Delhi)
+INSERT INTO items (id, ticket_type, price)
+VALUES 
+    ((SELECT ID FROM monuments WHERE NAME = 'National Museum'), 'adult', 20.00),
+    ((SELECT ID FROM monuments WHERE NAME = 'National Museum'), 'child', 20.00);
+
+-- Indian Museum (Kolkata)
+INSERT INTO items (id, ticket_type, price)
+VALUES 
+    ((SELECT ID FROM monuments WHERE NAME = 'Indian Museum'), 'adult', 75.00),
+    ((SELECT ID FROM monuments WHERE NAME = 'Indian Museum'), 'child', 20.00);
+
  ALTER TABLE invoice
     -> ADD COLUMN phone_number VARCHAR(15) NOT NULL,
     -> ADD COLUMN email VARCHAR(255) NOT NULL;
-INSERT INTO monuments (NAME, CITY)
-    -> VALUES
-    ->     ('Ancient Site, Bhangarh', 'Jaipur'),
-    ->     ('Baori at Abhaneri', 'Jaipur'),
-    ->     ('Deeg Bhawan', 'Jaipur');
--- Insert adult and child tickets for 'Ancient Site, Bhangarh'
-INSERT INTO items (id, product_id, ticket_type, price)
-VALUES 
-    ((SELECT ID FROM monuments WHERE NAME = 'Ancient Site, Bhangarh'), NULL, 'adult', 20.00),
-    ((SELECT ID FROM monuments WHERE NAME = 'Ancient Site, Bhangarh'), NULL, 'child', 0.00);
-
--- Insert adult and child tickets for 'Baori at Abhaneri'
-INSERT INTO items (id, product_id, ticket_type, price)
-VALUES 
-    ((SELECT ID FROM monuments WHERE NAME = 'Baori at Abhaneri'), NULL, 'adult', 20.00),
-    ((SELECT ID FROM monuments WHERE NAME = 'Baori at Abhaneri'), NULL, 'child', 0.00);
-
--- Insert adult and child tickets for 'Deeg Bhawan'
-INSERT INTO items (id, product_id, ticket_type, price)
-VALUES 
-    ((SELECT ID FROM monuments WHERE NAME = 'Deeg Bhawan'), NULL, 'adult', 20.00),
-    ((SELECT ID FROM monuments WHERE NAME = 'Deeg Bhawan'), NULL, 'child', 0.00);
 ALTER TABLE invoice
     -> ADD CONSTRAINT chk_phone_number_length
     -> CHECK (CHAR_LENGTH(phone_number) = 10);
