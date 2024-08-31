@@ -18,8 +18,8 @@ CREATE TABLE invoice (
     ->     product_id INT,
     ->     booking_date DATE NOT NULL,
     ->     visit_date DATE NOT NULL,
-    ->     visit_time TIME NOT NULL,
     ->     no_of_tickets TINYINT UNSIGNED CHECK (no_of_tickets <= 10),
+    ->     aadhar_id CHAR(12),
     ->     FOREIGN KEY (id) REFERENCES monuments(ID),
     ->     FOREIGN KEY (product_id) REFERENCES items(product_id)
     -> );
@@ -48,3 +48,6 @@ INSERT INTO items (id, product_id, ticket_type, price)
 VALUES 
     ((SELECT ID FROM monuments WHERE NAME = 'Deeg Bhawan'), NULL, 'adult', 20.00),
     ((SELECT ID FROM monuments WHERE NAME = 'Deeg Bhawan'), NULL, 'child', 0.00);
+ALTER TABLE invoice
+    -> ADD CONSTRAINT chk_phone_number_length
+    -> CHECK (CHAR_LENGTH(phone_number) = 10);
