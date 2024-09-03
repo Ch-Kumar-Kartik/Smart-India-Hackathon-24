@@ -1,0 +1,9 @@
+your_project/
+├── app.py
+├── static/
+│   ├── style.css
+│   ├── images/
+│   │   └── chatbox-icon.svg
+│   └── app.js
+└── templates/
+    └── index.html
