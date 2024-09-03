@@ -1,0 +1,136 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey there! How can I assist you with your museum visit today?",
+        "Hello! What can I do for you regarding your ticket booking?",
+        "Hi! How can I help with your museum visit?",
+        "Hi! Do you need help with booking tickets or have other queries?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "Goodbye! Have a great day at the museum.",
+        "See you later! Enjoy your visit.",
+        "Bye! Safe travels and enjoy your time at the museum."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["You're welcome! Let me know if you need anything else.", "Happy to help! Enjoy your visit.", "Anytime! Have a great day."]
+    },
+    {
+      "tag": "book_ticket",
+      "patterns": [
+        "I want to book a ticket",
+        "Book a ticket for me",
+        "I need to buy tickets",
+        "How do I book tickets?"
+      ],
+      "responses": [
+        "Sure, I can help you with that. Please provide the following details: museum name, visit date, number of adults and children."
+      ]
+    },
+    {
+      "tag": "museum_name",
+      "patterns": [
+        "The museum name is",
+        "It's the",
+        "I'm visiting the"
+      ],
+      "responses": [
+        "Got it! Now, please provide the visit date."
+      ]
+    },
+    {
+      "tag": "visit_date",
+      "patterns": [
+        "The visit date is",
+        "It's on",
+        "I will visit on"
+      ],
+      "responses": [
+        "Thank you. How many adults and children will be visiting?"
+      ]
+    },
+    {
+      "tag": "number_of_visitors",
+      "patterns": [
+        "There will be",
+        "The number of adults and children is",
+        "We have"
+      ],
+      "responses": [
+        "Great! Please confirm the details or provide your name, mobile number, and email address."
+      ]
+    },
+    {
+      "tag": "personal_details",
+      "patterns": [
+        "My name is",
+        "Contact details are",
+        "My mobile number is",
+        "My email is"
+      ],
+      "responses": [
+        "Thanks! Please enter the OTP sent to your email or mobile number."
+      ]
+    },
+    {
+      "tag": "otp_verification",
+      "patterns": [
+        "The OTP is",
+        "I received the OTP",
+        "My OTP is"
+      ],
+      "responses": [
+        "OTP verified! Please confirm the details and proceed to payment."
+      ]
+    },
+    {
+      "tag": "payment",
+      "patterns": [
+        "I want to pay now",
+        "Proceed with payment",
+        "Pay for my tickets"
+      ],
+      "responses": [
+        "Payment is processed. Your ticket ID has been generated."
+      ]
+    },
+    {
+      "tag": "invoice",
+      "patterns": [
+        "Send me the invoice",
+        "Generate a ticket",
+        "I need a receipt"
+      ],
+      "responses": [
+        "A PDF invoice with your ticket details has been generated. You can download it now."
+      ]
+    },
+    {
+      "tag": "unknown",
+      "patterns": [
+        "Can you help me?",
+        "I have a question",
+        "Tell me more about the museum"
+      ],
+      "responses": [
+        "I can assist with booking tickets and provide information about your visit. What do you need help with?"
+      ]
+    }
+  ]
+}
