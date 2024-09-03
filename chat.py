@@ -1,18 +1,17 @@
 import random
 import json
-
 import torch
-
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('intents.json', 'r') as json_data:
+# Use raw string to handle special characters in the file path
+with open(r"C:/Users/Ch_Kumar_Kartik/Coding Resources/Python/Python Projects/SIH24/intents.json", 'r') as json_data:
     intents = json.load(json_data)
 
-FILE = "data.pth"
-data = torch.load(FILE)
+FILE = r"C:/Users/Ch_Kumar_Kartik/Coding Resources/Python/Python Projects/SIH24/data.pth"
+data = torch.load(FILE, weights_only=True)  # Set weights_only=True
 
 input_size = data["input_size"]
 hidden_size = data["hidden_size"]
@@ -47,13 +46,11 @@ def get_response(msg):
     
     return "I do not understand..."
 
-
 if __name__ == "__main__":
     print("Let's chat! (type 'quit' to exit)")
     while True:
-        # sentence = "do you use credit cards?"
         sentence = input("You: ")
-        if sentence == "quit":
+        if sentence.lower() == "quit":
             break
 
         resp = get_response(sentence)
