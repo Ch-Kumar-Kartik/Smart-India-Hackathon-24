@@ -1,0 +1,45 @@
+/* payment-button.css */
+
+#rzp-button1 {
+    /* Button styling */
+    background-color: #3399cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #rzp-button1:hover {
+    /* Button hover effect */
+    background-color: #2288bb;
+  }
+  
+  /* Add some spacing around the button */
+  #rzp-button1 {
+    margin: 20px 0;
+  }
+  
+  /* Style the alert messages (optional) */
+  .alert-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the payment form (optional) */
+  .payment-form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-form h2 {
+    margin-top: 0;
+  }
