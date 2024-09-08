@@ -1,4 +1,3 @@
-{
   "intents": [
     {
       "tag": "greeting",
@@ -11,19 +10,19 @@
         "Good day"
       ],
       "responses": [
-        "Hey there! How can I assist you with your museum visit today?",
-        "Hello! What can I do for you regarding your ticket booking?",
-        "Hi! How can I help with your museum visit?",
-        "Hi! Do you need help with booking tickets or have other queries?"
+        "Hey there! I am Tejas Bot, How can I assist you with your museum visit today?",
+        "Hello! I am Tejas Bot, What can I do for you regarding your ticket booking?",
+        "Hi! I am Tejas Bot, How can I help with your museum visit?",
+        "Hi! I am Tejas Bot, Do you need help with booking tickets or have other queries?"
       ]
     },
     {
       "tag": "goodbye",
       "patterns": ["Bye", "See you later", "Goodbye"],
       "responses": [
-        "Goodbye! Have a great day at the museum.",
-        "See you later! Enjoy your visit.",
-        "Bye! Safe travels and enjoy your time at the museum."
+        "Goodbye! Thanks for using Tejas Bot, Have a great day at the museum.",
+        "Thanks for using Tejas Bot, see you later! Enjoy your visit.",
+        "Bye! Safe travels and enjoy your time at the museum. Thanks for using Tejas Bot."
       ]
     },
     {
@@ -40,52 +39,105 @@
         "How do I book tickets?"
       ],
       "responses": [
-        "Sure, I can help you with that. Please provide the following details: museum name, visit date, number of adults and children."
+        "Sure, I can help you with that. Please provide me the museum name:"
       ]
     },
     {
       "tag": "museum_name",
       "patterns": [
+        "National Gallery of Modern Art",
+        "Salar Jung Museum",
+        "Victoria Memorial Hall",
+        "Allahabad Museum",
+        "National Museum",
+        "Indian Museum",
         "The museum name is",
         "It's the",
         "I'm visiting the"
       ],
       "responses": [
-        "Got it! Now, please provide the visit date."
+        "Got it! Now, please provide the visit date in YYYY-MM-DD"
       ]
     },
     {
       "tag": "visit_date",
       "patterns": [
-        "The visit date is",
-        "It's on",
-        "I will visit on"
+        "The visit date is 2024-09-21",
+        "It's on September 21, 2024",
+        "I will visit on 21st September 2024",
+        "2024-09-20"
       ],
       "responses": [
-        "Thank you. How many adults and children will be visiting?"
+        "Thank you. How many adults will be visiting?"
+      ]
+    },    
+    {
+      "tag": "number_of_adults",
+      "patterns": [
+        "There will be 3 adults",
+        "The number of adults is 2",
+        "We have 7",
+        "1 adults",
+        "6"
+      ],
+      "responses": [
+        "Thank you. How many children will be visiting?"
       ]
     },
     {
-      "tag": "number_of_visitors",
+      "tag": "number_of_children",
       "patterns": [
-        "There will be",
-        "The number of adults and children is",
-        "We have"
+        "There will be 1 children",
+        "The number of children is 3",
+        "We have 5 children",
+        "2 children"
       ],
       "responses": [
-        "Great! Please confirm the details or provide your name, mobile number, and email address."
+        "Great! Please provide your name"
       ]
     },
     {
-      "tag": "personal_details",
+      "tag": "name",
       "patterns": [
-        "My name is",
-        "Contact details are",
+        "My name is Mahesh",
+        "You can call me Somya",
+        "I am Kanak",
+        "Rohan"
+      ],
+      "responses": [
+        "Got it, {name}. Could you share your mobile number?"
+      ]
+    },
+    {
+      "tag": "mobile_number",
+      "patterns": [
         "My mobile number is",
-        "My email is"
+        "You can reach me at",
+        "Contact me on"
       ],
       "responses": [
-        "Thanks! Please enter the OTP sent to your email or mobile number."
+        "Thank you for sharing your mobile number. May I have your email address?"
+      ]
+    },
+    {
+      "tag": "email",
+      "patterns": [
+        "My email is",
+        "My email address is"
+      ],
+      "responses": [
+        "Great! Your email is noted. Let's move forward with your booking."
+      ]
+    },
+    {
+      "tag": "aadhar_number",
+      "patterns": [
+        "My Aadhaar number is",
+        "Aadhaar number is",
+        "Aadhaar is"
+      ],
+      "responses": [
+        "Aadhaar number received. Let's proceed with OTP verification."
       ]
     },
     {
@@ -111,6 +163,18 @@
       ]
     },
     {
+  "tag": "payment_confirmation",
+  "patterns": [
+    "Yes, I want to pay",
+    "Proceed with payment",
+    "I am ready to pay"
+  ],
+  "responses": [
+    "Redirecting you to the payment gateway...",
+    "Payment canceled. You can continue the booking process later."
+  ]
+},
+{
       "tag": "invoice",
       "patterns": [
         "Send me the invoice",
@@ -119,6 +183,92 @@
       ],
       "responses": [
         "A PDF invoice with your ticket details has been generated. You can download it now."
+      ]
+    },
+    {
+      "tag": "retrieve_booking",
+      "patterns": [
+        "I want to retrieve my booking",
+        "Retrieve my booking",
+        "Can I check my booking?",
+        "Show me my booking",
+        "Booking details",
+        "Check my booking"
+      ],
+      "responses": [
+        "Sure, please provide your registered email address to retrieve your booking."
+      ]
+    },
+    {
+      "tag": "national_gallery_of_modern_art",
+      "patterns": [
+        "Tell me about National Gallery of Modern Art",
+        "What are the details of National Gallery of Modern Art?",
+        "What are the facilities at National Gallery of Modern Art?",
+        "Give me information about National Gallery of Modern Art"
+      ],
+      "responses": [
+        "National Gallery of Modern Art: \nAddress: Jaipur House, Sher Shah Road, New Delhi\nCity: New Delhi\nPrice: ₹20 for adults and children\nTimings: Tuesday to Sunday 10:00 AM to 6:00 PM\nFacilities: guide available, wheelchair assistance, washroom available."
+      ]
+    },
+    {
+      "tag": "salar_jung_museum",
+      "patterns": [
+        "Tell me about Salar Jung Museum",
+        "What are the details of Salar Jung Museum?",
+        "What are the facilities at Salar Jung Museum?",
+        "Give me information about Salar Jung Museum"
+      ],
+      "responses": [
+        "Salar Jung Museum: \nAddress: Darulshifa, Hyderabad, Telangana 500002\nCity: Hyderabad\nPrice: ₹50 for adults, ₹20 for children\nTimings: Open all days except Fridays, 10:00 AM to 5:00 PM\nFacilities: washroom, wheelchair, souvenir shop, cloakroom, guide available."
+      ]
+    },
+    {
+      "tag": "victoria_memorial_hall",
+      "patterns": [
+        "Tell me about Victoria Memorial Hall",
+        "What are the details of Victoria Memorial Hall?",
+        "What are the facilities at Victoria Memorial Hall?",
+        "Give me information about Victoria Memorial Hall"
+      ],
+      "responses": [
+        "Victoria Memorial Hall: \nAddress: 1 Queens Way, Maidan, Kolkata, West Bengal 700071\nCity: Kolkata\nPrice: ₹50 for adults and children\nTimings: 10:00 AM – 6:00 PM (Closed on Mondays)\nFacilities: VMH Canteen, Museum Shop, Museum Guide, Wheelchair, Cloakroom."
+      ]
+    },
+    {
+      "tag": "allahabad_museum",
+      "patterns": [
+        "Tell me about Allahabad Museum",
+        "What are the details of Allahabad Museum?",
+        "What are the facilities at Allahabad Museum?",
+        "Give me information about Allahabad Museum"
+      ],
+      "responses": [
+        "Allahabad Museum: \nAddress: Chandrashekhar Azad Park, Kamla Nehru Rd, George Town, Prayagraj, Uttar Pradesh 211002\nCity: Prayagraj\nPrice: ₹50 for adults, ₹20 for children\nTimings: Tuesday to Sunday, 10:30 AM to 6:00 PM\nFacilities: washroom, wheelchair, souvenir shop, cloakroom, guide available."
+      ]
+    },
+    {
+      "tag": "national_museum",
+      "patterns": [
+        "Tell me about National Museum",
+        "What are the details of National Museum?",
+        "What are the facilities at National Museum?",
+        "Give me information about National Museum"
+      ],
+      "responses": [
+        "National Museum: \nAddress: Janpath, New Delhi - 110011\nCity: New Delhi\nPrice: ₹20 for adults and children\nTimings: Tuesday to Sunday, 10:00 AM to 6:00 PM (Closed on Mondays)\nFacilities: washroom, wheelchair, souvenir shop, cloakroom, guide available."
+      ]
+    },
+    {
+      "tag": "indian_museum",
+      "patterns": [
+        "Tell me about Indian Museum",
+        "What are the details of Indian Museum?",
+        "What are the facilities at Indian Museum?",
+        "Give me information about Indian Museum"
+      ],
+      "responses": [
+        "Indian Museum: \nAddress: 27 Jawaharlal Nehru Rd, Fire Brigade Head Quarter, New Market Area, Dharmatala, Taltala, Kolkata, West Bengal 700016\nCity: Kolkata\nPrice: ₹75 for adults, ₹20 for children\nTimings: Tuesday to Sunday, 10:00 AM to 6:00 PM\nFacilities: washroom, wheelchair, souvenir shop, cloakroom, drinking water, elevator."
       ]
     },
     {
@@ -133,4 +283,4 @@
       ]
     }
   ]
-}
+    }
