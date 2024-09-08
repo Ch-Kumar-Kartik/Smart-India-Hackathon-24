@@ -1,9 +1,15 @@
 your_project/
 ├── app.py
+├── chat.py
+├── model.py
+├── nltk_utils.py
+├── train.py
+├── intents.json
+├── data.pth
+├── records.sql
 ├── static/
 │   ├── style.css
-│   ├── images/
-│   │   └── chatbox-icon.svg
 │   └── app.js
 └── templates/
+    ├── base.html
     └── index.html
