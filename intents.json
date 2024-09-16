@@ -1,3 +1,4 @@
+{
   "intents": [
     {
       "tag": "greeting",
@@ -7,28 +8,59 @@
         "How are you",
         "Is anyone there?",
         "Hello",
-        "Good day"
+        "Good day",
+        "Greetings",
+        "What's up?",
+        "Yo!",
+        "Howdy"
       ],
       "responses": [
         "Hey there! I am Tejas Bot, How can I assist you with your museum visit today?",
         "Hello! I am Tejas Bot, What can I do for you regarding your ticket booking?",
         "Hi! I am Tejas Bot, How can I help with your museum visit?",
-        "Hi! I am Tejas Bot, Do you need help with booking tickets or have other queries?"
+        "Hi! I am Tejas Bot, Do you need help with booking tickets or have other queries?",
+        "Hello! How can I assist you with your museum visit?",
+        "Greetings! I’m here to help with museum ticketing or queries. How can I assist?"
       ]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": [
+        "Bye", 
+        "See you later", 
+        "Goodbye", 
+        "Catch you later", 
+        "I'm leaving", 
+        "Take care", 
+        "See ya"
+      ],
       "responses": [
         "Goodbye! Thanks for using Tejas Bot, Have a great day at the museum.",
         "Thanks for using Tejas Bot, see you later! Enjoy your visit.",
-        "Bye! Safe travels and enjoy your time at the museum. Thanks for using Tejas Bot."
+        "Bye! Safe travels and enjoy your time at the museum. Thanks for using Tejas Bot.",
+        "See you soon! If you have more questions later, feel free to ask.",
+        "Farewell! Hope you enjoy your museum experience."
       ]
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["You're welcome! Let me know if you need anything else.", "Happy to help! Enjoy your visit.", "Anytime! Have a great day."]
+      "patterns": [
+        "Thanks", 
+        "Thank you", 
+        "That's helpful", 
+        "Thank's a lot!", 
+        "Thanks for your help", 
+        "Thanks a bunch", 
+        "Much appreciated", 
+        "Thank you very much"
+      ],
+      "responses": [
+        "You're welcome! Let me know if you need anything else.", 
+        "Happy to help! Enjoy your visit.", 
+        "Anytime! Have a great day.", 
+        "You're most welcome! I’m glad I could assist.", 
+        "No problem! Let me know if there's anything else you need."
+      ]
     },
     {
       "tag": "book_ticket",
@@ -36,10 +68,18 @@
         "I want to book a ticket",
         "Book a ticket for me",
         "I need to buy tickets",
-        "How do I book tickets?"
+        "How do I book tickets?",
+        "Can I book tickets here?",
+        "Help me book a museum ticket",
+        "I need help with ticket booking",
+        "Can you book a ticket for me?"
       ],
       "responses": [
-        "Sure, I can help you with that. Please provide me the museum name:"
+        "Sure, I can help you with that. Please provide me the museum name:",
+        "I’d be happy to help. What museum would you like to visit?",
+        "To begin your booking, can you tell me which museum you’re visiting?",
+        "Got it. Which museum are you interested in booking tickets for?",
+        "Sure! What museum would you like to book tickets for?"
       ]
     },
     {
@@ -53,10 +93,18 @@
         "Indian Museum",
         "The museum name is",
         "It's the",
-        "I'm visiting the"
+        "I'm visiting the",
+        "We’re going to",
+        "Our destination is",
+        "We are planning to visit",
+        "The museum I want is"
       ],
       "responses": [
-        "Got it! Now, please provide the visit date in YYYY-MM-DD"
+        "Got it! Now, please provide the visit date in YYYY-MM-DD",
+        "Thank you for the museum name. When would you like to visit?",
+        "Understood! When is your visit planned? Please provide the date.",
+        "Great! Could you let me know the date of your visit?",
+        "Thanks! When are you planning to visit? Let me know the date."
       ]
     },
     {
@@ -65,12 +113,20 @@
         "The visit date is 2024-09-21",
         "It's on September 21, 2024",
         "I will visit on 21st September 2024",
-        "2024-09-20"
+        "2024-09-20",
+        "My visit date is tomorrow",
+        "Next weekend",
+        "This Friday",
+        "Next month"
       ],
       "responses": [
-        "Thank you. How many adults will be visiting?"
+        "Thank you. How many adults will be visiting?",
+        "Got it! How many adults will be in your group?",
+        "Noted. How many adults are visiting?",
+        "Thanks! How many adults are you booking for?",
+        "Thanks for the date. Can you tell me how many adults will be visiting?"
       ]
-    },    
+    },
     {
       "tag": "number_of_adults",
       "patterns": [
@@ -78,10 +134,17 @@
         "The number of adults is 2",
         "We have 7",
         "1 adults",
-        "6"
+        "6",
+        "I’m booking for 2 adults",
+        "2 adults will be visiting",
+        "We’re 4 adults"
       ],
       "responses": [
-        "Thank you. How many children will be visiting?"
+        "Thank you. How many children will be visiting?",
+        "Great! How many children will be with you?",
+        "Understood. How many children are coming?",
+        "Thanks! How many kids are in the group?",
+        "Awesome! How many children should I include in the booking?"
       ]
     },
     {
@@ -90,10 +153,17 @@
         "There will be 1 children",
         "The number of children is 3",
         "We have 5 children",
-        "2 children"
+        "2 children",
+        "I’m booking for 1 child",
+        "We’ll have 2 kids",
+        "3 children are coming"
       ],
       "responses": [
-        "Great! Please provide your name"
+        "Great! Please provide your name",
+        "Got it! May I have your name for the booking?",
+        "Thanks! Could you tell me your name?",
+        "Awesome. What’s your name for the ticket?",
+        "Understood. Could you share your name?"
       ]
     },
     {
@@ -102,10 +172,17 @@
         "My name is Mahesh",
         "You can call me Somya",
         "I am Kanak",
-        "Rohan"
+        "Rohan",
+        "The name is Priya",
+        "I’m Tanvi",
+        "I’m booking under the name Anil"
       ],
       "responses": [
-        "Got it, {name}. Could you share your mobile number?"
+        "Got it, {name}. Could you share your mobile number?",
+        "Thank you, {name}! May I have your mobile number?",
+        "Thanks, {name}. Could I get your mobile number?",
+        "Thanks, {name}! Could you provide your contact number?",
+        "Thanks, {name}. Please share your mobile number."
       ]
     },
     {
@@ -113,20 +190,34 @@
       "patterns": [
         "My mobile number is",
         "You can reach me at",
-        "Contact me on"
+        "Contact me on",
+        "Here’s my number",
+        "I’m reachable at",
+        "My phone number is"
       ],
       "responses": [
-        "Thank you for sharing your mobile number. May I have your email address?"
+        "Thank you for sharing your mobile number. May I have your email address?",
+        "Got it! What’s your email address?",
+        "Thank you. Can I have your email address for the booking?",
+        "Thanks! Could you also share your email address?",
+        "Understood! What’s your email?"
       ]
     },
     {
       "tag": "email",
       "patterns": [
         "My email is",
-        "My email address is"
+        "My email address is",
+        "You can email me at",
+        "I use",
+        "Here’s my email"
       ],
       "responses": [
-        "Great! Your email is noted. Let's move forward with your booking."
+        "Great! Your email is noted. Let's move forward with your booking.",
+        "Thanks! We’ve got your email. Let’s proceed with the booking.",
+        "Got it! Now let’s proceed with your ticket booking.",
+        "Your email is recorded. Let’s continue with the booking.",
+        "Awesome! Email received. Moving ahead with your booking."
       ]
     },
     {
@@ -134,10 +225,17 @@
       "patterns": [
         "My Aadhaar number is",
         "Aadhaar number is",
-        "Aadhaar is"
+        "Aadhaar is",
+        "Here’s my Aadhaar",
+        "I’m providing my Aadhaar number",
+        "My government ID is"
       ],
       "responses": [
-        "Aadhaar number received. Let's proceed with OTP verification."
+        "Aadhaar number received. Let's proceed with OTP verification.",
+        "Got your Aadhaar number. Let’s proceed with OTP verification.",
+        "Thanks! Let’s move to the OTP verification step.",
+        "Aadhaar received. Moving to OTP verification now.",
+        "Thanks for the Aadhaar number. Let’s verify with OTP."
       ]
     },
     {
@@ -145,10 +243,35 @@
       "patterns": [
         "The OTP is",
         "I received the OTP",
-        "My OTP is"
+        "My OTP is",
+        "Here’s the OTP",
+        "I got the OTP"
       ],
       "responses": [
-        "OTP verified! Please confirm the details and proceed to payment."
+        "OTP verified! Please confirm the details and proceed to payment.",
+        "Your OTP has been verified. You can now proceed to payment.",
+        "Thank you! OTP verified successfully. Ready for payment.",
+        "Great! Your OTP is verified. Proceed to payment.",
+        "Thanks! OTP verification is done. You may proceed to payment."
+      ]
+    },
+    {
+      "tag": "payment_options",
+      "patterns": [
+        "How can I pay?",
+        "What payment methods are available?",
+        "Can I pay with credit card?",
+        "Can I use UPI?",
+        "What are the payment options?",
+        "Which modes of payment are accepted?",
+        "Do you accept PayTM?"
+      ],
+      "responses": [
+        "We accept UPI, credit/debit cards, and online wallets like PayTM.",
+        "You can pay via UPI, credit/debit card, or online wallets like PayTM.",
+        "Payment can be made using UPI, card, or digital wallets such as PayTM.",
+        "You may use UPI, credit/debit cards, or digital wallets like PayTM for payment.",
+        "We accept UPI, credit/debit cards, and online wallets including PayTM."
       ]
     },
     {
@@ -163,18 +286,6 @@
       ]
     },
     {
-  "tag": "payment_confirmation",
-  "patterns": [
-    "Yes, I want to pay",
-    "Proceed with payment",
-    "I am ready to pay"
-  ],
-  "responses": [
-    "Redirecting you to the payment gateway...",
-    "Payment canceled. You can continue the booking process later."
-  ]
-},
-{
       "tag": "invoice",
       "patterns": [
         "Send me the invoice",
