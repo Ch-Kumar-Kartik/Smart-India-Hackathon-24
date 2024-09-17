@@ -73,11 +73,11 @@ class Chatbox {
         this.messages.slice().reverse().forEach(function(item, index) {
             if (item.name === "Sam")
             {
-                html += '<div class="messages_item messages_item--visitor">' + item.message + '</div>'
+                html += '<div class="messages__item messages__item--visitor">' + item.message + '</div>'
             }
             else
             {
-                html += '<div class="messages_item messages_item--operator">' + item.message + '</div>'
+                html += '<div class="messages__item messages__item--operator">' + item.message + '</div>'
             }
           });
 
