@@ -7,9 +7,8 @@ your_project/
 ├── intents.json
 ├── data.pth
 ├── records.sql
-├── static/
-│   ├── style.css
-│   └── app.js
 └── templates/
     ├── base.html
     └── index.html
+    ├── style.css
+    └── app.js
