@@ -160,7 +160,7 @@ def get_response(msg):
                             server.starttls()
                             server.login(sender_email, password)  # Logging into the sender's email account
 
-                            name = user_data["name"]
+                            
                             receiver_email = user_data["email"]
 
                             def email_verification(receiver_email):
@@ -183,7 +183,7 @@ def get_response(msg):
 
                             valid_receiver_email = email_verification(receiver_email)  # Checking if the email is valid or not
 
-                            body = f"Dear {name},\n\nYour One Time Password (OTP) is {OTP}."  # Generating a message
+                            body = f"Dear,\n\nYour One Time Password (OTP) is {OTP}."  # Generating a message
                             subject = "One Time Password (OTP) for verification"
                             message = f'Subject: {subject}\n\n{body}'
 
@@ -233,7 +233,7 @@ def get_response(msg):
                         print(f"Error: {e}")
 
                 elif tag == "aadhar_number":
-                    if not otp_verified:
+                    if otp_verified:
                         return "Please verify your OTP before entering the Aadhaar number."
                     user_data["aadhar_id"] = msg.split("Aadhar number is")[-1].strip()
                     return "Aadhar number received. Let's proceed with the payment. Please confirm if you want to pay now."
