@@ -1,4 +1,4 @@
-your_project/
+Smart-India-Hackathon-24/
 ├── app.py
 ├── chat.py
 ├── model.py
@@ -7,8 +7,13 @@ your_project/
 ├── intents.json
 ├── data.pth
 ├── records.sql
+├──payment_Gate_Way/
+├   ├── checkout.html
+├   ├── checkout.css
+├   └── checkout.js
 └── templates/
     ├── base.html
-    └── index.html
+    ├── index.html
     ├── style.css
+    ├── museum.html
     └── app.js
