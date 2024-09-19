@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museums</title>
+    <style>
+        /* Adding the uploaded background image */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-image: url('C:/Users/KK/SIH/museumbackground.png'); /* Path to your uploaded image */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333; /* Darker text for contrast */
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3.5em;
+            font-weight: bold;
+            font-family: 'Cursive', sans-serif; /* Decorative font */
+            color: #f5e1da; /* Light peach color to contrast the background */
+            text-shadow: 3px 3px 6px #000; /* Adding some shadow for a decorative effect */
+            margin-bottom: 40px;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 2px solid #ddd; /* Light border */
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        .section:nth-child(1) {
+            background-color: rgba(255, 183, 77, 0.8); /* Warm Orange */
+        }
+
+        .section:nth-child(2) {
+            background-color: rgba(66, 135, 245, 0.8); /* Cool Blue */
+        }
+
+        .section:nth-child(3) {
+            background-color: rgba(173, 255, 47, 0.8); /* Bright Green */
+        }
+
+        .section:nth-child(4) {
+            background-color: rgba(255, 99, 132, 0.8); /* Light Coral */
+        }
+
+        .section:nth-child(5) {
+            background-color: rgba(123, 104, 238, 0.8); /* Medium Slate Blue */
+        }
+
+        .section:nth-child(6) {
+            background: linear-gradient(to right, rgba(255, 140, 0, 0.8), rgba(255, 215, 0, 0.8)); /* Orange and Yellow Gradient */
+        }
+
+        .text {
+            flex: 1;
+            padding: 20px;
+            font-size: 1.4em; /* Increased font size for better readability */
+            line-height: 1.6; /* Better readability with increased line height */
+        }
+
+        .image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Image shadow for depth */
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+            }
+
+            .section:nth-child(even) {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Museums</h1>
+
+    <div class="section">
+        <div class="text">
+            <p style="font-weight: bold;">National Gallery of Modern Art, New Delhi</p><br>
+            <p>
+                The National Gallery of Modern Art (NGMA) in New Delhi is a premier art museum showcasing India's rich modern art heritage. Established in 1954, it houses an extensive collection of works by prominent Indian artists, covering various genres and styles, from colonial to contemporary art, making it a vital center for art lovers and researchers alike.</p>
+        </div>
+        <div class="image">
+            <img src="C:/Users/KK/SIH/museum6.png" alt="National Museum" />
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="image">
+            <img src="C:/Users/KK/SIH/museum1.png" alt="Indian Museum" />
+        </div>
+        <div class="text">
+            <p style="font-weight: bold;">Salar Jung Museum, Hyderabad</p><br>
+            <p>
+                The Salar Jung Museum, located in Hyderabad, is one of India's largest museums, famous for its diverse collection of art, artifacts, and antiquities. It was founded by Nawab Mir Yousuf Ali Khan, commonly known as Salar Jung III. The museum features a vast array of exhibits, including sculptures, paintings, textiles, and rare manuscripts from around the world.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text">
+            <p style="font-weight: bold;">Victoria Memorial Hall, Kolkata</p><br>
+            <p>
+                The Victoria Memorial in Kolkata is a grand white marble structure built in memory of Queen Victoria. Completed in 1921, it now serves as a museum and tourist attraction. The museum houses an extensive collection of British Raj-era artifacts, paintings, and historical manuscripts, offering insight into India's colonial history and architectural grandeur.</p>
+        </div>
+        <div class="image">
+            <img src="C:/Users/KK/SIH/museum2.png" alt="Vatican Museums" />
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="image">
+            <img src="C:/Users/KK/SIH/museum3.png" alt="The Met Museum" />
+        </div>
+        <div class="text">
+            <p style="font-weight: bold;">Allahabad Museum, Prayagraj</p><br>
+              <p>  The Allahabad Museum, situated in Prayagraj, is known for its rich collection of ancient sculptures, terracotta artifacts, paintings, and memorabilia from India's freedom struggle. Established in 1931, it showcases the region's cultural heritage, featuring prehistoric artifacts, rare Buddhist and Jain relics, and works by famous Indian artists, including the renowned painter Nicholas Roerich.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text">
+            <p style="font-weight: bold;">National Museum, New Delhi</p><br>
+            <p>
+                The National Museum in New Delhi is one of India’s largest and most comprehensive museums, founded in 1949. It houses a vast collection of artifacts ranging from prehistoric times to modern art. The museum's galleries display an impressive array of exhibits, including sculptures, manuscripts, textiles, and cultural treasures from different parts of India, offering deep insights into the country's history.</p>
+        </div>
+        <div class="image">
+            <img src="C:/Users/KK/SIH/museum4.png" alt="Uffizi Gallery" />
+        </div>
+    </div>
+
+    <div class="section" style="background-color: rgba(240, 128, 128, 0.9);">
+        <div class="image">
+            <img src="C:/Users/KK/SIH/museum5.png" alt="Hermitage Museum" />
+        </div>
+        <div class="text">
+            <p style="font-weight: bold;">Indian Museum, Kolkata</p><br>
+            <p>
+                Established in 1814, the Indian Museum in Kolkata is the oldest and one of the largest museums in India. It houses an extensive collection of artifacts from various fields, including archaeology, geology, anthropology, and art. Notable exhibits include ancient sculptures, rare coins, fossils, and a rich display of textiles and crafts, reflecting India's diverse cultural heritage.</p>
+        </div>
+    </div>
+</body>
+</html>
