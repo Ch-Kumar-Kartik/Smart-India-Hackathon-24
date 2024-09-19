@@ -5,12 +5,14 @@
 
 ### Protototype overview : 'Add link to ppt or embed here'
 
+
 ## Project Overview
 -------------------
 
 The Ticket Booking Chatbot is a web-based application designed to assist users in booking tickets for monuments and museums. It provides information on facilities, timings, and directions, and handles ticket bookings with OTP-based mobile number authentication. The chatbot also collects Aadhar numbers during the booking process.
 
 [Add vid here]
+
 
 ## Table of Contents
 -----------------
@@ -33,7 +35,6 @@ The Ticket Booking Chatbot is a web-based application designed to assist users i
 - Authentication: OTP-based login for mobile number verification.
 
 - Data Collection: Collects Aadhar numbers during ticket bookings.
-
 
 
 ## System Requirements
@@ -64,6 +65,7 @@ docker build -t chatbot .
 docker run -p 5000:5000 chatbot
 ```
 
+
 ## Contributing
 
 ### Guidelines :
@@ -80,10 +82,12 @@ docker run -p 5000:5000 chatbot
 * Include a clear description of changes
 * Assign a reviewer
 
+
 ## License
 -------
 MIT License
 Copyright (c) 2024 [Bhavesh Shastri]
+
 
 ## Known Issues
 -------------
