@@ -1,17 +1,18 @@
 # Smart-India-Hackathon-24
 ===============
 
-### Our Problem Statement : 'Add Problem Statement here'
+### Our Problem Statement : Online Chatbot based ticketing system!
 
-### Protototype overview : 'Add link to ppt or embed here'
+
+### Protototype overview : https://1drv.ms/p/c/96cb6668d9deb42a/EZOi_-9QVthIjwtRfUlH8z4B5CLg3qlBMyKT4uR02KbQgw?e=3Bsq8p
 
 
 ## Project Overview
 -------------------
 
-The Ticket Booking Chatbot is a web-based application designed to assist users in booking tickets for monuments and museums. It provides information on facilities, timings, and directions, and handles ticket bookings with OTP-based mobile number authentication. The chatbot also collects Aadhar numbers during the booking process.
+The Ticket Booking Chatbot is a web-based application designed to assist users in booking tickets for museums. It provides information on facilities, timings, and directions, and handles ticket bookings with OTP-based email authentication. The chatbot also collects Aadhar numbers during the booking process.
 
-[Add vid here]
+https://youtu.be/K4zvhK1Y8JQ
 
 
 ## Table of Contents
@@ -28,11 +29,11 @@ The Ticket Booking Chatbot is a web-based application designed to assist users i
 ## Features
 -------------------
 
-- Ticket Booking: Allows users to book tickets for various monuments and museums.
+- Ticket Booking: Allows users to book tickets for various museums.
 
 - Information Retrieval: Provides answers to basic questions about washroom locations, facilities, timings, and directions.
 
-- Authentication: OTP-based login for mobile number verification.
+- Authentication: OTP-based login for email verification.
 
 - Data Collection: Collects Aadhar numbers during ticket bookings.
 
@@ -45,8 +46,6 @@ The Ticket Booking Chatbot is a web-based application designed to assist users i
 * Database: MySQL
 
 * Frontend: JavaScript, HTML, CSS
-
-* Server: Apache
 
  
 ## Installation
@@ -86,13 +85,4 @@ docker run -p 5000:5000 chatbot
 ## License
 -------
 MIT License
-Copyright (c) 2024 [Bhavesh Shastri]
-
-
-## Known Issues
--------------
-
-* Issue 1: [Description of issue]
-   Workaround: [Provide workaround or solution]
-* Issue 2: [Description of issue]
-   Status: [Open/In Progress/Resolved]
+Copyright (c) 2024 [SYNTAX SQUAD]
