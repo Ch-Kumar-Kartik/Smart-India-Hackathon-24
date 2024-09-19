@@ -7,13 +7,24 @@ Smart-India-Hackathon-24/
 ├── intents.json
 ├── data.pth
 ├── records.sql
-├──payment_Gate_Way/
-├   ├── checkout.html
-├   ├── checkout.css
-├   └── checkout.js
-└── templates/
-    ├── base.html
-    ├── index.html
-    ├── style.css
-    ├── museum.html
-    └── app.js
+├── payment_Gate_Way/
+│   ├── checkout.html
+│   ├── checkout.css
+│   └── checkout.js
+├── templates/
+│   ├── payment_Gate_Way/
+│   ├── base.html
+│   ├── index.html
+│   ├── style.css
+│   ├── museum.html
+│   ├── app.js
+│   ├── images/
+│   │   ├── museum1.jpg
+│   │   ├── museum2.jpg
+│   │   ├── museum3.jpg
+│   │   ├── museum4.jpg
+│   │   ├── museum5.jpg
+│   │   ├── museum6.jpg
+│   │   └── museum7.jpg
+└── __pycache__/
+
