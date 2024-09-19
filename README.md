@@ -21,13 +21,13 @@ The Ticket Booking Chatbot is a web-based application designed to assist users i
 ## Features
 -------------------
 
--- Ticket Booking: Allows users to book tickets for various monuments and museums.
+- Ticket Booking: Allows users to book tickets for various monuments and museums.
 
--- Information Retrieval: Provides answers to basic questions about washroom locations, facilities, timings, and directions.
+- Information Retrieval: Provides answers to basic questions about washroom locations, facilities, timings, and directions.
 
--- Authentication: OTP-based login for mobile number verification.
+- Authentication: OTP-based login for mobile number verification.
 
--- Data Collection: Collects Aadhar numbers during ticket bookings.
+- Data Collection: Collects Aadhar numbers during ticket bookings.
 
 
 
