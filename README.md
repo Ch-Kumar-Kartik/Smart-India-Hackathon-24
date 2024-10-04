@@ -4,9 +4,6 @@
 ### Our Problem Statement : Online Chatbot based ticketing system!
 
 
-### Protototype overview : https://1drv.ms/p/c/96cb6668d9deb42a/EZOi_-9QVthIjwtRfUlH8z4B5CLg3qlBMyKT4uR02KbQgw?e=3Bsq8p
-
-
 ## Project Overview
 -------------------
 
